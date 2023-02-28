@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>Bootcamp for HTML and CSS</title>
+    </head>
+
+    <body>
+<!--day1--> 
+        <div>
+            HTML is fun and exciting!
+        </div>
+        <div>
+            This is a block element.
+        </div>
+        <span>
+            This is an inline element.
+        </span>
+        <span>
+            This is the 2nd inline element.
+        </span>
+        <p class="paragraph" text-align="right">
+            My 1st Paragraph.
+        </p>
+        <p id="other-paragraph">
+            My 2nd Paragraph.
+        </p>
+        <h1>
+            Heading 1
+        </h1>
+        <h2>
+            Heading 2
+        </h2>
+        <h3>
+            Heading 3
+        </h3>
+        <h4>
+            Heading 4
+        </h4>
+        <h5>
+            Heading 5
+        </h5>
+        <h6>
+            Heading 6
+        </h6>
+        <p>
+            This is a paragraph.
+        </p>
+        <span>
+            Span 1
+        </span>
+        <br>
+        <span>
+            Span 2
+        </span>
+        <br>
+        <span>
+            Span 3
+        </span>
+        <hr>
+        <span>
+            Span 4
+        </span>
+        <hr>
+
+        <a href="about.html">
+            About Us Page
+        </a>
+        <a href="contact.html">
+            Contact Us Page
+        </a>
+        <a href="product.html">
+            Our Product Page
+        </a>
+        <a href="gallery.html">
+            Our Gallery Page
+        </a>
+       
+        <ol>
+            <li>Banana</li>
+            <li>Chocolate</li>
+            <li>Milk</li>
+        </ol>
+        <ul>
+            <li>Dogs</li>
+            <li>Cat</li>
+            <li>Parrot</li>
+        </ul>
+        <ul>
+            <li>
+                Products
+                <ul>
+                    <li>Comluter Monitor</li>
+                    <li>Laptop</li>
+                    <li>Mouse</li>
+                </ul>
+            </li>
+            <li>
+                Gallery
+            </li>
+            <li>Contact
+                <ol>
+                    <li>Email: email@gmail.com
+                        <ul>
+                            <li>another@email.com</li>
+                            <li>another2@email.com</li>
+                        </ul>
+                    </li>
+                    <li>Phone: 09091234567</li>
+                    <li>Facebook: @username</li>
+                </ol>
+            </li>
+        </ul>
+
+        <img src="dog.jpg" width="300px" alt="This is my first image.">
+
+<!--day2-->
+        <hr>
+        <table border="1">
+            <thead>
+                <theader>
+                    <td>Name</td>
+                    <td>Email Address</td>
+                    <td colspan="2">Phone Number and Country</td>
+                </theader>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3">Ero Aguilar</td>
+                    <td>eroaguilar@email.com</td>
+                    <td>09091234567</td>
+                    <td>Philippines</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">fumika@email.com</td>
+                    <td>09097654321</td>
+                    <td>Japan</td>
+                </tr>
+                <tr>
+                    <td>09091234567</td>
+                    <td>Japan</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <form action="save.html" method="post" required>
+            <label for="fullname">
+                Full Name:
+            </label>
+            <input type="text" name="fullname" id="fullname">
+            <br>
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" name="password" id="password" min="6" max="10">
+            <br>
+            <label for="age">
+                Age:
+            </label>
+            <input type="number" name="age" id="age" min="0" max="120">
+            <br>
+            <label for="date">
+                Date:
+            </label>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="email">
+                Email Address:
+            </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="comments">
+                Comments:
+                <br>
+            </label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br>
+            <h5>
+                Tell us which one you like the most:
+            </h5>
+            <input type="radio" name="pet" id="dog">
+            <label for="dog">
+                Dog
+            </label>
+            <input type="radio" name="pet" id="cat">
+            <label for="cat">
+                Cat
+            </label>
+            <input type="radio" name="pet" id="fish">
+            <label for="fish">
+                Fish
+            </label>
+            <br>
+            <p>
+                Which one is your favorite?
+            </p>
+            <input type="checkbox" name="food" id="ramen">
+            <label for="ramen">
+                Ramen
+            </label>
+            <input type="checkbox" name="food" id="sushi">
+            <label for="sushi">
+                Sushi
+            </label>
+            <input type="checkbox" name="food" id="curry">
+            <label for="curry">
+                Curry
+            </label>
+            <br>
+            <label for="device">
+                What is your device?
+            </label>
+            <select name="device" id="device">
+                <option value="macbook">Macbook</option>
+                <option value="ipad" selected>iPad</option>
+                <option value="iphone">iPhone</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <label for="car">
+                What is your car?
+            </label>
+            <select name="car" id="car" multiple>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="suzuki">Suzuki</option>
+            </select>
+
+            <br>
+            <br>
+            <label for="profile-picture">
+                Please select your profile picture:
+            </label>
+            <input type="file" name="picture" id="picture" multiple>
+
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit this Form">
+            <button type="submit" name="submit">
+                Submit this Form Again
+            </button>
+
+
+        </form>
+
+
+    </body>
+
+</html>
